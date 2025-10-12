@@ -21,7 +21,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   padding: 1.5rem 5%;
   z-index: 1000;
