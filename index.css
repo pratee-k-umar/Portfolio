@@ -207,6 +207,12 @@ nav {
   animation: float 20s infinite ease-in-out;
 }
 
+.float-item:hover {
+  border-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
+}
+
 .float-item:nth-child(1) {
   width: 80px;
   height: 80px;
