@@ -1,16 +1,54 @@
+// Animate title letters
+document.addEventListener("DOMContentLoaded", function () {
+  const title = document.querySelector(".animated-title");
+  if (title) {
+    const text = title.textContent;
+    title.textContent = "";
+
+    text.split("").forEach((char) => {
+      const span = document.createElement("span");
+      if (char === " ") {
+        span.className = "space";
+      } else {
+        span.className = "letter";
+      }
+      span.textContent = char;
+      title.appendChild(span);
+    });
+  }
+
+  // Mouse Trail Effect
+  document.addEventListener("mousemove", (e) => {
+    // Create trail dots
+    const trail = document.createElement("div");
+    trail.className = "trail-dot";
+    trail.style.left = e.clientX + "px";
+    trail.style.top = e.clientY + "px";
+    document.body.appendChild(trail);
+
+    // Remove trail dot after animation
+    setTimeout(() => {
+      trail.remove();
+    }, 600);
+  });
+});
+
 // Scroll reveal animation
 const observerOptions = {
   threshold: 0.15,
   rootMargin: "0px 0px -50px 0px",
 };
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-    }
-  });
-}, observerOptions);
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  },
+  observerOptions
+);
 
 // Observe all animated elements
 document
