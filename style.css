@@ -981,6 +981,23 @@ body {
     transform: translateX(5px);
 }
 
+/* Project Links Container */
+.project-links {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.project-link.github-link {
+    background: transparent;
+    color: #000;
+}
+
+.project-link.github-link:hover {
+    background: #000;
+    color: var(--white);
+}
+
 .project-image {
     flex: 0 0 65%;
     overflow: hidden;
@@ -1101,6 +1118,17 @@ body {
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-bottom-color: var(--white);
+}
+
+/* Override browser autofill background */
+.contact-form input:-webkit-autofill,
+.contact-form input:-webkit-autofill:hover,
+.contact-form input:-webkit-autofill:focus,
+.contact-form input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-text-fill-color: var(--white) !important;
+    background-color: transparent !important;
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 .file-upload {

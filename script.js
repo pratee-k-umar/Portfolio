@@ -494,7 +494,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // EmailJS Contact Form Integration
 (function () {
     // Initialize EmailJS with your public key
-    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+    emailjs.init("qSBZCPOA7d0XTqypt"); // Replace with your EmailJS public key
 
     const contactForm = document.getElementById("contact-form");
     const submitBtn = document.getElementById("submit-btn");
@@ -512,7 +512,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Send email using EmailJS
             // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual IDs
-            emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this).then(
+            emailjs.sendForm("service_6ipkbae", "template_cx2uabs", this).then(
                 function (response) {
                     console.log("SUCCESS!", response.status, response.text);
                     formStatus.textContent = "✓ Message sent successfully!";
