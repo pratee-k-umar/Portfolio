@@ -981,6 +981,11 @@ body {
     transform: translateX(5px);
 }
 
+.dsms {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
 /* Project Links Container */
 .project-links {
     display: flex;
