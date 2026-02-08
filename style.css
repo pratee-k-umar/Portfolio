@@ -35,7 +35,9 @@ body {
 .scroll-animate {
     opacity: 0;
     transform: translateY(60px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
 }
 
 .scroll-animate.animate-in {
@@ -46,7 +48,9 @@ body {
 .scroll-scale {
     opacity: 0;
     transform: scale(0.8);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
 }
 
 .scroll-scale.animate-in {
@@ -57,7 +61,9 @@ body {
 .scroll-slide-left {
     opacity: 0;
     transform: translateX(-80px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
 }
 
 .scroll-slide-left.animate-in {
@@ -68,7 +74,9 @@ body {
 .scroll-slide-right {
     opacity: 0;
     transform: translateX(80px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
 }
 
 .scroll-slide-right.animate-in {
@@ -79,7 +87,9 @@ body {
 .scroll-rotate {
     opacity: 0;
     transform: rotate(-10deg) scale(0.9);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
 }
 
 .scroll-rotate.animate-in {
@@ -979,11 +989,6 @@ body {
 .project-link:hover {
     background: #333;
     transform: translateX(5px);
-}
-
-.dsms {
-    pointer-events: none;
-    cursor: not-allowed;
 }
 
 /* Project Links Container */
