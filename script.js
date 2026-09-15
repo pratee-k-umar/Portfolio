@@ -563,27 +563,3 @@ function calculateAge() {
 
 // Calculate age on page load
 calculateAge();
-
-// Automatic Age Calculator
-function calculateAge() {
-    const birthDate = new Date("2004-11-26");
-    const today = new Date();
-    let age = today.getFullYear() - birthDate.getFullYear();
-    const monthDiff = today.getMonth() - birthDate.getMonth();
-
-    // Adjust if birthday hasn't occurred yet this year
-    if (
-        monthDiff < 0 ||
-        (monthDiff === 0 && today.getDate() < birthDate.getDate())
-    ) {
-        age--;
-    }
-
-    const ageElement = document.getElementById("age");
-    if (ageElement) {
-        ageElement.textContent = age + " yrs";
-    }
-}
-
-// Calculate age on page load
-calculateAge();
